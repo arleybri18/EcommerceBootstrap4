@@ -1,0 +1,65 @@
+.form {
+    margin-bottom: 15px;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.descriptions p {
+    margin-bottom: 2px;
+}
+
+#form {
+    display: inline;
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+#form p {
+    text-align: center;
+}
+
+#form label {
+    font-size: 20px;
+}
+
+.image{
+    width: 100%;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    color: grey;
+}
+
+.lbl_clasificacion {
+    display: inline;
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    display: inline;
+}
+
+label:hover,
+label:hover~label {
+    color: orange;
+}
+
+input[type="radio"]:checked~label {
+    color: orange;
+}
+
+.btnmodal {
+    color: white;
+}
+
+.tab-content {
+    padding: 15px;
+}

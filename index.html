@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-commerce</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- YB: Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">E-commerce</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <!-- <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="#"><i class="fas fa-shopping-cart"></i> Canasta</a>
+                    <a class="nav-item nav-link btn btn-outline-secondary" href="#">Salir</a>
+                </div> -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Canasta</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-secondary" href="#">Salir</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- YB: container -->
+    <div class="container">
+        <!-- row for the search form -->
+        <div class="row mt-3">
+            <div class="col-lg-3">
+                <form class="form">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar camisetas">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- YB: List of Categories -->
+                <div class="d-none d-lg-block">
+                    <h5><b>Categorías</b></h5>
+                    <ul class="list-group">
+                        <li class="list-group-item active d-flex justify-content-between">Todos <span class="badge badge-pill badge-secondary">100</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Hombre <span class="badge badge-pill badge-secondary">4</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Mujer <span class="badge badge-pill badge-secondary">12</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Hipster <span class="badge badge-pill badge-secondary">24</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Metal <span class="badge badge-pill badge-secondary">6</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Universidad <span class="badge badge-pill badge-secondary">6</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Deportiva <span class="badge badge-pill badge-secondary">8</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Rayas <span class="badge badge-pill badge-secondary">11</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Apreciada <span class="badge badge-pill badge-secondary">10</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-lg-9">
+                <div class="row">
+                    <!-- YB: Carousel -->
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="image" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-1.jpg"
+                                    alt="t-shirt1">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="image" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-2.jpg"
+                                    alt="t-shirt2">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="image" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-3.jpg"
+                                    alt="t-shirt3">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4  col-sm-6 mt-3">
+                        <div class="card">
+                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" alt="Camiseta1"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Hipster Ultimate</h5>
+                                <p class="card-text">La camiseta ideal para el hipster.</p>
+                                <p><a href="#" class="btn btn-primary" role="button">$229 <i class="fas fa-shopping-cart"></i></a>
+                                    <button class="btn btn-secondary" role="button" data-toggle="modal" data-target="#camiseta1">Detalles</button></p>
+
+                                <!-- YB: Modal -->
+                                <div class="modal" id="camiseta1" role="dialog">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-10">
+                                                <div class="modal-dialog">
+
+                                                    <!-- Modal content-->
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+
+                                                            <h4 class="modal-title">Hipster Ultimate</h4>
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        </div>
+
+                                                        <div class="modal-body">
+                                                            <ul class="list-group">
+                                                                <li class="list-group-item list-group-item-info"><i
+                                                                        class="fas fa-info-circle"></i></span> Este
+                                                                    producto
+                                                                    está
+                                                                    agotado.</li>
+                                                            </ul>
+
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg"
+                                                                        alt="Camiseta1" class="img-thumbnail">
+                                                                </div>
+                                                                <div class="col-sm-6 descriptions">
+                                                                    <p>Precio: $200</p>
+                                                                    <p class="lbl_clasificacion">Clasificación:</p>
+                                                                    <p class="lbl_clasificacion">
+                                                                        <form id="form">
+                                                                            <p class="clasificacion">
+                                                                                <input id="radio1" type="radio" name="estrellas"
+                                                                                    value="5">
+                                                                                <label for="radio1">&#9733;</label>
+                                                                                <input id="radio2" type="radio" name="estrellas"
+                                                                                    value="4">
+                                                                                <label for="radio2">&#9733;</label>
+                                                                                <input id="radio3" type="radio" name="estrellas"
+                                                                                    value="3">
+                                                                                <label for="radio3">&#9733;</label>
+                                                                                <input id="radio4" type="radio" name="estrellas"
+                                                                                    value="2">
+                                                                                <label for="radio4">&#9733;</label>
+                                                                                <input id="radio5" type="radio" name="estrellas"
+                                                                                    value="1">
+                                                                                <label for="radio5">&#9733;</label>
+                                                                            </p>
+                                                                        </form>
+                                                                    </p>
+                                                                    <p>
+                                                                        <button class="btn btn-warning btn-sm"><b>Hispter</b></button>
+                                                                        <button class="btn btn-secondary btn-sm"><b>Deportiva</b></button></li>
+                                                                    </p>
+                                                                    <p class="text-primary"><i class="fas fa-heart"></i>
+                                                                        Agregar
+                                                                        a los deseos
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <div role="tabpanel">
+                                                                        <ul class="nav nav-tabs" role="tablist" id="mytab">
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link active" id="description-tab"
+                                                                                    href="#description" aria-controls="description"
+                                                                                    role="tab" aria-selected="true"
+                                                                                    data-toggle="tab">Descripción</a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" id="comments-tab"
+                                                                                    href="#comments" aria-controls="comments"
+                                                                                    role="tab" aria-selected="false"
+                                                                                    data-toggle="tab">Comentarios</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="tab-content" id="myTabContent">
+                                                                            <div role="tab-panel" class="tab-pane fade show active"
+                                                                                aria-labelledby="description-tab" id="description">
+                                                                                <p>Lorem, ipsum dolor sit amet
+                                                                                    consectetur adipisicing elit.
+                                                                                    Culpa
+                                                                                    sapiente
+                                                                                    ipsa fuga exercitationem
+                                                                                    accusantium dolore est!
+                                                                                    Possimus
+                                                                                    aperiam
+                                                                                    reiciendis facilis nesciunt
+                                                                                    minus!
+                                                                                    Qui maiores sunt odit
+                                                                                    ducimus ipsum
+                                                                                    hic delectus.</p>
+                                                                            </div>
+                                                                            <div role="tab-panel" class="tab-pane fade"
+                                                                                aria-labelledby="comments-tab" id="comments">
+
+                                                                                <ul class="list-group mb-3">
+                                                                                    <li class="list-group-item list-group-item-secondary">Yony
+                                                                                        Briñez comentó hace 2
+                                                                                        diás</li>
+                                                                                    <li class="list-group-item">Está
+                                                                                        camiseta esta
+                                                                                        increíble, la
+                                                                                        quiero!</li>
+                                                                                </ul>
+
+                                                                                <div class="form-group">
+                                                                                    <textarea class="form-control" rows="4"
+                                                                                        placeholder="Ingresa tu comentario"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Cerrar</button>
+                                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4  col-sm-6 mt-3">
+                        <div class="card">
+                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-2.jpg" alt="Camiseta2"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">On Motion Live</h5>
+                                <p class="card-text">Perfecta para salidas rocosas.</p>
+                                <p><a href="#" class="btn btn-primary" role="button">$229 <i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#" class="btn btn-secondary" role="button">Detalles</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4  col-sm-6 mt-3">
+                        <div class="card">
+                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-3.jpg" alt="Camiseta3"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Underground Max</h5>
+                                <p class="card-text">Para los amantes del underground.</p>
+                                <p><a href="#" class="btn btn-primary" role="button">$229 <span class="glyphicon glyphicon-shopping-cart"
+                                            aria-hidden="true"></span></a>
+                                    <a href="#" class="btn btn-secondary" role="button">Detalles</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mt-3">
+                        <div class="card">
+                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-4.jpg" alt="Camiseta4"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Hipster Ultimate</h5>
+                                <p class="card-text">La Camiseta ideal para el hipster</p>
+                                <p><a href="#" class="btn btn-primary" role="button">$229 <span class="glyphicon glyphicon-shopping-cart"
+                                            aria-hidden="true"></span></a>
+                                    <a href="#" class="btn btn-secondary" role="button">Detalles</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mt-3">
+                        <div class="card">
+                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-5.jpg" alt="Camiseta5"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Hipster Ultimate</h5>
+                                <p class="card-text">La Camiseta ideal para el hipster</p>
+                                <p><a href="#" class="btn btn-primary" role="button">$229 <span class="glyphicon glyphicon-shopping-cart"
+                                            aria-hidden="true"></span></a>
+                                    <a href="#" class="btn btn-secondary" role="button">Detalles</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
